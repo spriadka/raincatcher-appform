@@ -10,7 +10,7 @@ module.exports = function() {
     }
   };
 
-  listFormsStub.callsArgWith(0, undefined, mockFormsModel);
+  listFormsStub.callsArgWith(1, undefined, mockFormsModel);
 
   return listFormsStub;
 };

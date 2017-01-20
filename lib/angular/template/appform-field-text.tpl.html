@@ -5,8 +5,7 @@
          placeholder="{{fieldTextCtrl.field.helpText}}"
          name="inputName"
          ng-model="fieldTextCtrl.field.value"
-         min="{{fieldTextCtrl.field.fieldOptions.validation.min}}"
-         max="{{fieldTextCtrl.field.fieldOptions.validation.max}}"
-         ng-required="fieldTextCtrl.field.required"
+         ng-required="fieldTextCtrl.field.required",
+         ng-change="fieldTextCtrl.field.updateValue()"
   >
 </md-input-container>
