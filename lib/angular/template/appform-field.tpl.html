@@ -35,8 +35,6 @@
     <appform-field-location></appform-field-location>
   </div>
 
-
-
   <div ng-switch-when="signature" flex class="appform-signature">
     <md-input-container class="md-block">
       <p class="md-caption">{{fieldCtrl.field.name}}</p>
@@ -46,5 +44,9 @@
 
   <div ng-switch-when="photo" flex class="appform-photo">
     <appform-field-photo></appform-field-photo>
+  </div>
+
+  <div ng-switch-when="textarea">
+    <appform-field-textarea></appform-field-textarea>
   </div>
 </div>

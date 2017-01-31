@@ -6,6 +6,7 @@ require('./appform-field-location.tpl.html.js');
 require('./appform-field-number.tpl.html.js');
 require('./appform-field-photo.tpl.html.js');
 require('./appform-field-text.tpl.html.js');
+require('./appform-field-textarea.tpl.html.js');
 require('./appform-field-time.tpl.html.js');
 require('./appform-field.tpl.html.js');
 require('./appform-page.tpl.html.js');
