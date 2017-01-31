@@ -16,6 +16,10 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '    <appform-field-number></appform-field-number>\n' +
     '  </div>\n' +
     '\n' +
+    '  <div ng-switch-when="email">\n' +
+    '    <appform-field-email></appform-field-email>\n' +
+    '  </div>\n' +
+    '\n' +
     '  <div ng-switch-when="text">\n' +
     '    <appform-field-text></appform-field-text>\n' +
     '  </div>\n' +
@@ -40,8 +44,6 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '    <appform-field-location></appform-field-location>\n' +
     '  </div>\n' +
     '\n' +
-    '\n' +
-    '\n' +
     '  <div ng-switch-when="signature" flex class="appform-signature">\n' +
     '    <md-input-container class="md-block">\n' +
     '      <p class="md-caption">{{fieldCtrl.field.name}}</p>\n' +
@@ -51,6 +53,10 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '\n' +
     '  <div ng-switch-when="photo" flex class="appform-photo">\n' +
     '    <appform-field-photo></appform-field-photo>\n' +
+    '  </div>\n' +
+    '\n' +
+    '  <div ng-switch-when="textarea">\n' +
+    '    <appform-field-textarea></appform-field-textarea>\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
