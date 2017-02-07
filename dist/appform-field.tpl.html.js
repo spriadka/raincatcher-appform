@@ -10,17 +10,16 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '<!--\n' +
     ' Parent view for rendering all of the field types.\n' +
     '-->\n' +
-    '\n' +
     '<div ng-switch="fieldCtrl.field.type">\n' +
     '  <div ng-switch-when="number">\n' +
     '    <appform-field-number></appform-field-number>\n' +
     '  </div>\n' +
     '\n' +
-    '  <div ng-switch-when="email">\n' +
+    '  <div ng-switch-when="emailAddress">\n' +
     '    <appform-field-email></appform-field-email>\n' +
     '  </div>\n' +
     '\n' +
-    '  <div ng-switch-when="website">\n' +
+    '  <div ng-switch-when="url">\n' +
     '    <appform-field-website></appform-field-website>\n' +
     '  </div>\n' +
     '\n' +
