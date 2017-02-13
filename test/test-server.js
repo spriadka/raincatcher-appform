@@ -16,7 +16,7 @@ var app = express()
   , mbaasExpress = mbaasApi.mbaasExpress()
   ;
 
-require('../server')(mbaasApi);
+require('./../lib/server')(mbaasApi);
 
 var config = cc({}).add({
   IP: process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
