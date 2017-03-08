@@ -1,0 +1,19 @@
+<form name="checkboxForm" novalidate>
+    <input type="hidden" ng-model="fieldCheckboxCtrl.field.value" name="checkbox"
+           min="{{fieldCheckboxCtrl.field.fieldOptions.definition.validation.min}}"
+           max="{{fieldCheckboxCtrl.field.fieldOptions.definition.validation.max}}"
+           ng-model-options="{allowInvalid: true}" checkbox-validation>
+           <!-- When allowInvalid set to false, ng-model would become undefined -->
+
+    <md-input-container ng-repeat="item in fieldCheckboxCtrl.field.fieldOptions.definition.options">
+        <md-checkbox ng-click="fieldCheckboxCtrl.toggle(item.label)" ng-checked="item.checked">{{item.label}}</md-checkbox>
+    </md-input-container>
+
+    <p ng-show="checkboxForm.checkbox.$error.min" role="alert">Please select at least {{ctrl.field.fieldOptions.validation.min}}
+        options
+    </p>
+    <p ng-show="form.checkbox.$error.max" role="alert">Cannot select more than {{ctrl.field.fieldOptions.validation.max}}
+        options
+    </p>
+
+</form>
