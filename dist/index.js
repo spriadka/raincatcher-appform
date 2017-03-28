@@ -1,3 +1,4 @@
+require('./appform-field-checkbox.tpl.html.js');
 require('./appform-field-date.tpl.html.js');
 require('./appform-field-datetime.tpl.html.js');
 require('./appform-field-email.tpl.html.js');
