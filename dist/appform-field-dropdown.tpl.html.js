@@ -30,9 +30,9 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '      ng-if="fieldDropdownCtrl.field.fieldOptions.definition.include_blank_option">\n' +
     '    </md-option>\n' +
     '    <md-option\n' +
-    '      ng-value="opt"\n' +
     '      ng-repeat="opt in fieldDropdownCtrl.field.fieldOptions.definition.options"\n' +
-    '      ng-selected="opt.checked">\n' +
+    '      ng-selected="opt.checked"\n' +
+    '      ng-value="opt.label">\n' +
     '      {{ opt.label }}\n' +
     '    </md-option>\n' +
     '  </md-select>\n' +

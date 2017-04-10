@@ -21,9 +21,9 @@ Note here that the ng-change directive is bound to the fieldDropdownCtrl.field.u
       ng-if="fieldDropdownCtrl.field.fieldOptions.definition.include_blank_option">
     </md-option>
     <md-option
-      ng-value="opt"
       ng-repeat="opt in fieldDropdownCtrl.field.fieldOptions.definition.options"
-      ng-selected="opt.checked">
+      ng-selected="opt.checked"
+      ng-value="opt.label">
       {{ opt.label }}
     </md-option>
   </md-select>
