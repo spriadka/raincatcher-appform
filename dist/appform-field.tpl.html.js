@@ -64,8 +64,12 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '\n' +
     '  <div ng-switch-when="dropdown">\n' +
     '    <appform-field-dropdown></appform-field-dropdown>\n' +
+    '  </div>\n' +
     '  <div ng-switch-when="checkbox">\n' +
     '    <appform-field-checkbox></appform-field-checkbox>\n' +
+    '  </div>\n' +
+    '  <div ng-switch-when="radio">\n' +
+    '	<appform-field-radio></appform-field-radio>\n' +
     '  </div>\n' +
     '</div>\n' +
     '');
