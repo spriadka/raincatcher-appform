@@ -1,17 +1,16 @@
 <!--
  Parent view for rendering all of the field types.
 -->
-
 <div ng-switch="fieldCtrl.field.type">
   <div ng-switch-when="number">
     <appform-field-number></appform-field-number>
   </div>
 
-  <div ng-switch-when="email">
+  <div ng-switch-when="emailAddress">
     <appform-field-email></appform-field-email>
   </div>
 
-  <div ng-switch-when="website">
+  <div ng-switch-when="url">
     <appform-field-website></appform-field-website>
   </div>
 
@@ -54,8 +53,14 @@
     <appform-field-textarea></appform-field-textarea>
   </div>
 
+<<<<<<< HEAD
   <div ng-switch-when="dropdown">
     <appform-field-dropdown></appform-field-dropdown>
   </div>
 
+=======
+  <div ng-switch-when="checkbox">
+    <appform-field-checkbox></appform-field-checkbox>
+  </div>
+>>>>>>> 041842a103da01544074fca269684ee2fba3893c
 </div>
